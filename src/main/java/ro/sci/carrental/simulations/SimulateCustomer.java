@@ -12,7 +12,7 @@ public class SimulateCustomer {
         //cautarea tuturor clientilor
         System.out.println("Lista clientilor din sistem este: ");
         for (Customer customer : customerRepository.getAll()) {
-            System.out.println(customer.getLastName());
+            System.out.println(customer.getFirstName() + (" ") + customer.getLastName());
         }
         System.out.println("_____________________________________");
     }

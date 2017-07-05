@@ -10,14 +10,14 @@ public class RentalCarImpl implements RentalCar{
 
     public void pickupTime(Car car, Customer customer, String date) {
         System.out.println("Automobilul " + car.getMake() + " va fi ridicat de catre clientul "
-                + customer.getLastName() + " la data si ora " + date);
+                + customer.getFirstName() +(" ")+ customer.getLastName() + " in data de: " + date);
         car.setReserved(true);
     }
 
 
     public void returnTime(Car car, Customer customer, String date) {
         System.out.println("Automobilul " + car.getMake() + " va fi inapoiat de catre clientul " +
-                customer.getLastName() + " la data si ora " + date);
+                 customer.getFirstName()+(" ")+customer.getLastName()+ " in data de: " + date);
         car.setReserved(false);
     }
 

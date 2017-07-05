@@ -10,7 +10,7 @@ public class SimulateCars {
     public void searches(CarRepositoryImpl carRepository) {
         System.out.println("Lista masinilor din CarRepositoryImpl este: ");
         for (Car car : carRepository.getAll()) {
-            System.out.println(car.getMake());
+            System.out.println(car.getMake() + (" ") + car.getModel()+ (", ") +car.getSize()+ (" ") +car.getFuelType());
         }
         System.out.println("_____________________________________");
     }

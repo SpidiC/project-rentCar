@@ -6,3 +6,6 @@ target
 ./target
 .iws
 *.iml
+.gitignore
+out/
+src/
