@@ -1,5 +1,7 @@
 package ro.sci.carrental.domain.car;
 
+import ro.sci.carrental.calendar.RentalCar;
+import ro.sci.carrental.calendar.RentalCarImpl;
 /**
  * Created by Spidi on 12/06/2017.
  */
@@ -17,6 +19,9 @@ public class Car {
     private FuelType fuelType;
     private VehicleCategory vehicleCategory;
     private boolean reserved;
+    private float calculatePricePerDays;
+
+
 
     public Car() {
     }
@@ -117,5 +122,15 @@ public class Car {
         this.reserved = reserved;
     }
 
-
+    public float getCalculatePricePerDays() {
+        return calculatePricePerDays ;
     }
+
+    public void setCalculatePricePerDays(float size) {
+        this.calculatePricePerDays= calculatePricePerDays;
+    }
+
+
+
+}
+

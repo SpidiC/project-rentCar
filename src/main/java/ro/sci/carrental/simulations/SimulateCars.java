@@ -1,5 +1,6 @@
 package ro.sci.carrental.simulations;
 
+import ro.sci.carrental.calendar.RentalCar;
 import ro.sci.carrental.domain.car.Car;
 import ro.sci.carrental.repository.CarRepositoryImpl;
 
@@ -15,3 +16,11 @@ public class SimulateCars {
         System.out.println("_____________________________________");
     }
 }
+
+//    public void calculatePrice (Car car, RentalCar rentalCar) {
+//        System.out.println("Pretul pt masina : " );
+//        for (Car car1 : rentalCar.getNumberOfDays()) {
+//            System.out.println( audi.setCalculatePricePerDays() * rentalCar.getNumberOfDays()
+//        }
+//        System.out.println(--!!--);
+//    }
