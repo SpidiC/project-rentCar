@@ -23,6 +23,7 @@ public class Main {
         audi.setModel("A4");
         audi.setSize(1.9f);
         audi.setFuelType(FuelType.DIESEL);
+        audi.setCalculatePricePerDays(80f);
         Car bmw = new Car();
         bmw.setMake("Bmw");
         bmw.setModel("M5");
@@ -67,16 +68,15 @@ public class Main {
 
         //rent a car
         RentalCarImpl rentalCar = new RentalCarImpl();
-        rentalCar.pickupTime(audi,customer1, ("2017-07-06, 10:00."));
-
+        rentalCar.pickupTime(audi,customer1, ("2017-07-06"));
         //return the car
-        RentalCarImpl rentalCar1 = new RentalCarImpl();
-        rentalCar1.returnTime(audi, customer1,("2017-07-20, 13:00."));
+        rentalCar.returnTime(audi, customer1,("2017-07-20"));
 
+        System.out.println("Automobilul a fost inchiriat " +  rentalCar.getNumberOfDays()+ " zile");
+
+
+       System.out.println(  audi.getCalculatePricePerDays());
 
     }
-
-
-
 
 }
